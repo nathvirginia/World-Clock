@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Including Moment.js library for date and time manipulation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <!-- Including Moment Timezone with data for accurate time zone conversions -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock</title>
   </head>
   <body>
     <div class="container">
       <h1>World Clock</h1>
+      <!-- Dropdown for selecting the city -->
       <select id="select-city">
         <option value="">Choose City</option>
         <option value="current">Current Location</option>
@@ -19,46 +22,58 @@
         <option value="America/Denver">Denver</option>
         <option value="America/Sao_Paulo">Sao Paulo</option>
       </select>
-
+      <!-- Container for displaying the selected cities -->
       <div id="cities">
+        <!-- Chicago City -->
         <div class="city" id="chicago">
           <div>
             <h2>Chicago</h2>
+            <!-- Displaying the date for Chicago -->
             <div class="date"></div>
           </div>
+          <!-- Displaying the time for Chicago -->
           <div class="time"><span class="small">AM</span></div>
         </div>
-
+        <!-- Serbia City -->
         <div class="city" id="serbia">
           <div>
             <h2>Serbia</h2>
+            <!-- Displaying the date for Serbia -->
             <div class="date"></div>
           </div>
+          <!-- Displaying the time for Serbia -->
           <div class="time"><span class="small">AM</span></div>
         </div>
-
+        <!-- Recife City -->
         <div class="city" id="recife">
           <div>
             <h2>Recife</h2>
+            <!-- Displaying the date for Recife -->
             <div class="date"></div>
           </div>
+          <!-- Displaying the time for Recife -->
           <div class="time"><span class="small">AM</span></div>
         </div>
 
         <div class="city" id="toronto">
           <div>
+            <!-- Toronto City -->
             <h2>Toronto</h2>
+            <!-- Displaying the date for Toronto -->
             <div class="date"></div>
           </div>
+          <!-- Displaying the time for Toronto -->
           <div class="time"><span class="small">AM</span></div>
         </div>
       </div>
     </div>
+    <!-- Footer section with links and credits -->
     <footer>
       <a href="https://github.com/nathvirginia/World-Clock">Open source</a>
       Coded by <span class="name">Natalia Virginia</span> hosted on
       <a href="https://world-clock-js-project2.netlify.app/">Netlify</a>
     </footer>
+    <!-- Including the JavaScript file for dynamic functionality -->
     <script src="javascript/script.js"></script>
   </body>
 </html>
